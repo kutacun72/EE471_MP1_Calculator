@@ -1,3 +1,9 @@
 class Calculator:
     def __init__(self):
         self.__current_val = 0
+
+    def divide(self, x, y):
+        if y == 0:
+            raise ValueError("Cannot divide by zero")
+        self.__current_val = x / y
+        return self.__current_val
